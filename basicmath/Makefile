@@ -3,14 +3,14 @@ FILE2 = basicmath_large.c   rad2deg.c  cubic.c   isqrt.c
 
 TARGET_ISA=x86
 
-GEM5_HOME=../gem5
+GEM5_HOME=..
 $(info   GEM5_HOME is $(GEM5_HOME))
 
 CXX=g++
 
 CFLAGS=-std=c++14 -static -O3 -I$(GEM5_HOME)/include
 
-LDFLAGS=-L$(GEM5_HOME)/util/m5/build/$(TARGET_ISA)/out -lm5
+LDFLAGS=-L$(GEM5_HOME)/out -lm5
 
 OBJECTS1= basicmath_small
 OBJECTS2= basicmath_large
