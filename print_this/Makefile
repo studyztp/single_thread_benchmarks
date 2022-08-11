@@ -9,7 +9,7 @@ CXX=g++
 
 CFLAGS=-O0 -ggdb3 -std=c++14 -static -I$(GEM5_HOME)/include
 
-LDFLAGS=-L$(GEM5_HOME)/out -lm5
+LDFLAGS=-L$(GEM5_HOME)/out -lm5 -L../libs
 
 print_this: print_this_src.c Makefile
 	$(CXX) print_this_src.c $(CFLAGS) $(LDFLAGS) -o print_this

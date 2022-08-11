@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "m5_mmap.h"
+
 #define GEM5
 
 #ifdef GEM5
