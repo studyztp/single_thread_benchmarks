@@ -9,6 +9,9 @@
 
 int main(int argc, char *argv[]) {
 #ifdef GEM5
+    map_m5_mem();
+#endif
+#ifdef GEM5
   m5_work_begin(0, 0);
 #endif
     if(argc<=2) {
